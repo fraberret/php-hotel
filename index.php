@@ -62,6 +62,21 @@
 
 </h1>
 
+<p> 
+    <?= $hotel['description']?>
+
+</p>
+
+<p> 
+    <?= $hotel['vote']?>
+
+</p>
+
+<p> 
+    <?= $hotel['distance_to_center']?> Meter
+
+</p>
+
 <?php endforeach;?>
 
 
