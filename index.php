@@ -54,32 +54,32 @@
     <title>Document</title>
 </head>
 <body>
-    
 
-<?php foreach($hotels as $hotel) :?>
+<h1 class="text-center">Hotels List</h1>
 
-<h1> 
-    <?= $hotel['name']?>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Descrizione</th>
+                <th scope="col">Voto</th>
+                <th scope="col">Distanza dal Centro</th>
+            </tr>
 
-</h1>
-
-<p> 
-    <?= $hotel['description']?>
-
-</p>
-
-<p> 
-    <?= $hotel['vote']?>
-
-</p>
-
-<p> 
-    <?= $hotel['distance_to_center']?> Meter
-
-</p>
-
-<?php endforeach;?>
-
+        </thead>
+    <?php foreach($hotels as $hotel) :?>
+        <tbody>
+            <tr>
+                <th scope="row"><?= $hotel['name']?></th>
+                <td><?= $hotel['description']?></td>
+                <td><?= $hotel['vote']?></td>
+                <td><?= $hotel['distance_to_center']?> Meter</td>
+            </tr>
+        </tbody>
+    <?php endforeach;?>
+    </table>
+</div>
 
 
 
